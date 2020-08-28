@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void __attribute__((constructor)) check(void){
+void __attribute__((constructor)) runtime_check(void){
     pid_t pid, gpid;
     pid = getpid();
     gpid = getpgrp();
